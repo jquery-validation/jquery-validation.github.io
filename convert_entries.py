@@ -264,8 +264,9 @@ def convert_xml_to_markdown(xml_path):
 
 def main():
     """Main conversion function."""
-    entries_dir = Path('/home/runner/work/validation-content/validation-content/entries')
-    output_dir = Path('/home/runner/work/validation-content/validation-content/_entries')
+    script_dir = Path(__file__).parent
+    entries_dir = script_dir / 'entries'
+    output_dir = script_dir / '_entries'
     
     # Create output directory
     output_dir.mkdir(exist_ok=True)
