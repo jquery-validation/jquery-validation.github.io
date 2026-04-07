@@ -18,7 +18,8 @@ The serverside resource is called via jQuery.ajax (XMLHttpRequest) and gets a ke
 ## Usage
 
 **options** *(Object)*
-: For the URL of the resource to request for serverside validation (String) or options to fully customize the request, see [jQuery.ajax](https://api.jquery.com/jQuery.ajax) for details. These options deep-extend the defaults (`dataType:"json", data:{nameOfTheElement:valueOfTheElement}`). Any options you provide will override the defaults.
+
+For the URL of the resource to request for serverside validation (String) or options to fully customize the request, see [jQuery.ajax](https://api.jquery.com/jQuery.ajax) for details. These options deep-extend the defaults (`dataType:"json", data:{nameOfTheElement:valueOfTheElement}`). Any options you provide will override the defaults.
 
 ## Examples
 

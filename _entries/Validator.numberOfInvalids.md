@@ -17,7 +17,8 @@ This depends on the internal validator state. It covers all fields only after va
 ## Usage
 
 **errors** *(Object)*
-: One or more key/value pairs of input names and messages.
+
+One or more key/value pairs of input names and messages.
 
 ## Examples
 

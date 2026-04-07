@@ -18,7 +18,8 @@ Works with text inputs. To exclude the maximum value, subtract Number.MIN_VALUE 
 ## Usage
 
 **range** *(Array)*
-: Value range required
+
+Value range required
 
 ## Examples
 

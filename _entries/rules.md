@@ -28,7 +28,8 @@ Add rules
 **"add"** *(String)*
 
 **rules** *(Object)*
-: The rules to add. Accepts the same format as the rules-option of the validate-method.
+
+The rules to add. Accepts the same format as the rules-option of the validate-method.
 
 ### Form 3
 
@@ -37,7 +38,8 @@ Remove rules
 **"remove"** *(String)*
 
 **rules** *(Object)*
-: The space-seperated names of rules to remove and return. If left unspecified, removes and returns all rules. Manipulates only rules specified via rules-option or via rules("add").
+
+The space-seperated names of rules to remove and return. If left unspecified, removes and returns all rules. Manipulates only rules specified via rules-option or via rules("add").
 
 ## Examples
 

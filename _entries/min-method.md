@@ -18,7 +18,8 @@ Works with text inputs. To exclude the minimum value, add Number.MIN_VALUE to th
 ## Usage
 
 **value** *(Number)*
-: Minimum value required
+
+Minimum value required
 
 ## Examples
 

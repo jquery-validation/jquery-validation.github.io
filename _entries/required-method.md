@@ -26,14 +26,16 @@ The element is always required.
 Makes the element required, depending on the result of the given expression.
 
 **dependency-expression** *(String)*
-: An expression (String) that is evaluated in the context of the element's form, making the field required only if the expression returns more than one element. Very often your expression will use selector filters such as `#foo:checked`, `#foo:filled`, `#foo:visible`. This plugin provides [custom selectors for that purpose](/category/selectors/).
+
+An expression (String) that is evaluated in the context of the element's form, making the field required only if the expression returns more than one element. Very often your expression will use selector filters such as `#foo:checked`, `#foo:filled`, `#foo:visible`. This plugin provides [custom selectors for that purpose](/category/selectors/).
 
 ### Form 3
 
 Makes the element required, depending on the result of the given callback.
 
 **dependency-callback** *(Function)*
-: The function is executed with the element as it's only argument: If it returns true, the element is required.
+
+The function is executed with the element as it's only argument: If it returns true, the element is required.
 
 ## Examples
 

@@ -18,7 +18,8 @@ Transform the value of an element and the result for validation instead of the i
 ## Usage
 
 **value** *(String)*
-: The value of the element.
+
+The value of the element.
 
 ## Examples
 

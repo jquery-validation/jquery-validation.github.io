@@ -17,7 +17,8 @@ Accepts everything that [validate()](/validate) accepts.
 ## Usage
 
 **options** *(Object)*
-: Options to set as default.
+
+Options to set as default.
 
 ## Examples
 

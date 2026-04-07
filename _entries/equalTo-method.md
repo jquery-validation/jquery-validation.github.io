@@ -18,7 +18,8 @@ Returns true if the value has the same value as the element specified by the fir
 ## Usage
 
 **other** *(Selector)*
-: The selector for the element to compare the current values
+
+The selector for the element to compare the current values
 
 ## Examples
 

@@ -18,7 +18,8 @@ Return false if the element is some kind of text input and its value is too shor
 ## Usage
 
 **length** *(Number)*
-: Minimum number of characters required
+
+Minimum number of characters required
 
 ## Examples
 

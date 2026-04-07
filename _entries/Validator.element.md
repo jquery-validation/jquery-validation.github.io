@@ -17,7 +17,8 @@ This behaves as validation on blur or keyup, but returns the result.
 ## Usage
 
 **element** *(Selector)*
-: An element to validate, must be inside the validated form.
+
+An element to validate, must be inside the validated form.
 
 ## Examples
 

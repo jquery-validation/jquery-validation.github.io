@@ -18,7 +18,8 @@ Uses the HTML5 file API to look at the type attribute of one or more selected fi
 ## Usage
 
 **mimetype** *(String)*
-: The allowed type, seperated via ",", defaults to "image/*"
+
+The allowed type, seperated via ",", defaults to "image/*"
 
 ## Examples
 

@@ -18,7 +18,8 @@ Return false if the element is some kind of text input and its length is too sho
 ## Usage
 
 **range** *(Array)*
-: Value range required
+
+Value range required
 
 ## Examples
 

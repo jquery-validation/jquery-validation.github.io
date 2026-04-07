@@ -15,15 +15,18 @@ Add a compound class method - useful to refactor common combinations of rules in
 ### Form 1
 
 **name** *(String)*
-: The name of the class rule to add
+
+The name of the class rule to add
 
 **rules** *(Object)*
-: The compound rules (see example)
+
+The compound rules (see example)
 
 ### Form 2
 
 **rules** *(Object)*
-: A map of className-rules pairs (see example).
+
+A map of className-rules pairs (see example).
 
 ## Examples
 

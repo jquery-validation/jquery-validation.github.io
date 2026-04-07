@@ -18,7 +18,8 @@ Returns true if the value ends with one of the specified file extensions. If not
 ## Usage
 
 **extension** *(String)* (optional)
-: The allowed file extensions, seperated with "|" (or a comma, ","), defaults to "png|jpe?g|gif".
+
+The allowed file extensions, seperated with "|" (or a comma, ","), defaults to "png|jpe?g|gif".
 
 ## Examples
 

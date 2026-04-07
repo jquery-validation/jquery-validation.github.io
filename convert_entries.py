@@ -77,6 +77,7 @@ def parse_signature(sig_elem):
         arg_name = arg.get('name', 'argument')
         arg_type = arg.get('type', 'Any')
         optional = arg.get('optional', 'false') == 'true'
+        default_val = arg.get('default', '')
         
         arg_desc_elem = arg.find('desc')
         arg_desc = ""
@@ -84,26 +85,49 @@ def parse_signature(sig_elem):
             arg_desc = extract_text_with_html(arg_desc_elem)
         
         opt_str = " (optional)" if optional else ""
-        lines.append(f"**{arg_name}** *({arg_type})*{opt_str}")
+        default_str = f" (default: `{default_val}`)" if default_val else ""
+        lines.append(f"**{arg_name}** *({arg_type})*{opt_str}{default_str}")
         if arg_desc:
-            lines.append(f": {clean_text(arg_desc)}")
+            lines.append("")
+            lines.append(clean_text(arg_desc))
         lines.append("")
         
-        # Handle nested properties
-        for prop in arg.findall('property'):
-            prop_name = prop.get('name', 'property')
-            prop_type = prop.get('type', 'Any')
-            prop_desc_elem = prop.find('desc')
-            prop_desc = ""
-            if prop_desc_elem is not None:
-                prop_desc = extract_text_with_html(prop_desc_elem)
-            
-            lines.append(f"  - **{prop_name}** *({prop_type})*: {clean_text(prop_desc)}")
-        
-        if arg.findall('property'):
-            lines.append("")
+        # Handle nested properties (recursively)
+        parse_properties(arg, lines, indent=1)
     
     return '\n'.join(lines)
+
+
+def parse_properties(parent_elem, lines, indent=0):
+    """Recursively parse property elements."""
+    for prop in parent_elem.findall('property'):
+        prop_name = prop.get('name', 'property')
+        prop_type = prop.get('type', 'Any')
+        default_val = prop.get('default', '')
+        
+        prop_desc_elem = prop.find('desc')
+        prop_desc = ""
+        if prop_desc_elem is not None:
+            prop_desc = extract_text_with_html(prop_desc_elem)
+        
+        indent_str = "  " * indent
+        default_str = f" (default: `{default_val}`)" if default_val else ""
+        
+        # Format the property line
+        lines.append(f"{indent_str}**{prop_name}** *({prop_type})*{default_str}")
+        if prop_desc:
+            lines.append("")
+            # Indent description text
+            desc_lines = clean_text(prop_desc).split('\n')
+            for desc_line in desc_lines:
+                if desc_line.strip():
+                    lines.append(f"{indent_str}{desc_line}")
+        lines.append("")
+        
+        # Recursively handle nested properties
+        nested_props = prop.findall('property')
+        if nested_props:
+            parse_properties(prop, lines, indent + 1)
 
 
 def parse_example(example_elem):

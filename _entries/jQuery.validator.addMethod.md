@@ -17,17 +17,28 @@ For simple one-off validation, you can use the bundled `pattern` method (in addi
 ## Usage
 
 **name** *(String)*
-: The name of the method used to identify it and referencing it; this must be a valid JavaScript identifier
+
+The name of the method used to identify it and referencing it; this must be a valid JavaScript identifier
 
 **method** *(Function)*
-: The actual method implementation, returning true if an element is valid. First argument: Current value. Second argument: Validated element. Third argument: Parameters.
 
-  - **value** *(String)*: the current value of the validated element
-  - **element** *(Element)*: the element to be validated
-  - **params** *(Object)*: parameters specified for the method, e.g. for min: 5, the parameter is 5, for range: [1, 5] it's [1, 5]
+The actual method implementation, returning true if an element is valid. First argument: Current value. Second argument: Validated element. Third argument: Parameters.
+
+  **value** *(String)*
+
+  the current value of the validated element
+
+  **element** *(Element)*
+
+  the element to be validated
+
+  **params** *(Object)*
+
+  parameters specified for the method, e.g. for min: 5, the parameter is 5, for range: [1, 5] it's [1, 5]
 
 **message** *(String)* (optional)
-: The default message to display for this method. Can be a function created by ''jQuery.validator.format(value)''. When undefined, an existing message is used (handy for localization), otherwise the field-specific messages have to be defined.
+
+The default message to display for this method. Can be a function created by ''jQuery.validator.format(value)''. When undefined, an existing message is used (handy for localization), otherwise the field-specific messages have to be defined.
 
 ## Examples
 

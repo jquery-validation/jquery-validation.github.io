@@ -18,7 +18,8 @@ Works with text inputs. No support for input types: date, datetime, datetime-loc
 ## Usage
 
 **value** *(Number)*
-: Step value required
+
+Step value required
 
 ## Examples
 

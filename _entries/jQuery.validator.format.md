@@ -17,13 +17,16 @@ One or more arguments can be passed, in addition to the string template itself, 
 ## Usage
 
 **template** *(String)*
-: The string to format.
+
+The string to format.
 
 **argument** *(Object)*
-: The first argument to insert, or an array of Strings to insert
+
+The first argument to insert, or an array of Strings to insert
 
 **argumentN...** *(Object)*
-: The second etc. argument to insert
+
+The second etc. argument to insert
 
 ## Examples
 

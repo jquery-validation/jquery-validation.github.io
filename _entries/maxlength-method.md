@@ -18,7 +18,8 @@ Return false if the element is some kind of text input and its value is too long
 ## Usage
 
 **length** *(Number)*
-: Maximum number of characters required
+
+Maximum number of characters required
 
 ## Examples
 
