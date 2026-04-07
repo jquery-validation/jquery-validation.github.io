@@ -1,7 +1,7 @@
 title: jQuery Validation Plugin
 description: Site content for the jQuery Validation Plugin
-url: https://jqueryvalidation.org
-baseurl: ""
+url: https://jquery-validation.github.io
+baseurl: "/validation-content"
 
 # Build settings
 markdown: kramdown
@@ -23,6 +23,7 @@ exclude:
   - dist
   - Gemfile
   - Gemfile.lock
+  - GITHUB_PAGES_SETUP.md
 
 # Collections
 collections:

@@ -20,8 +20,8 @@ Starting with Version 1.15.0 [Markus Staab](https://github.com/staabm) took over
 ### Files:
 - [Download](https://github.com/jzaefferer/jquery-validation/releases/tag/1.19.5) - zip-Archive with source code, minified and packed version, demos and examples
 - [Changelog](https://github.com/jzaefferer/jquery-validation/releases/tag/1.19.5)
-- [Demos](//jqueryvalidation.org/files/demo/)
-- [Documentation](/documentation/)
+- [Demos](https://jqueryvalidation.org/files/demo/)
+- [Documentation](documentation/)
 - [GitHub Repository](https://github.com/jzaefferer/jquery-validation)
 
 ### Installation via Package Managers
