@@ -26,6 +26,7 @@ exclude:
   - GITHUB_PAGES_SETUP.md
   - entries
   - convert_entries.py
+  - CONVERSION_NOTES.md
 
 # Collections
 collections:
