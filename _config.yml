@@ -5,7 +5,6 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 # Exclude from processing
 exclude:
@@ -22,6 +21,8 @@ exclude:
   - .gitignore
   - .gitattributes
   - dist
+  - Gemfile
+  - Gemfile.lock
 
 # Collections
 collections:

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            margin: 0;
+            color: #0066cc;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin-right: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #0066cc;
+            margin-top: 1.5em;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #0066cc;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: #0066cc; text-decoration: none;">{{ site.title }}</a></h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/documentation/">Documentation</a>
+            <a href="/contribute/">Contribute</a>
+            <a href="/reference/">Reference</a>
+            <a href="https://github.com/jquery-validation/jquery-validation">GitHub</a>
+        </nav>
+    </header>
+    
+    <main>
+        {% if page.title and page.url != "/" %}
+        <h1>{{ page.title }}</h1>
+        {% endif %}
+        
+        {{ content }}
+    </main>
+    
+    <footer>
+        <p>&copy; jQuery Validation Plugin | <a href="https://github.com/jquery-validation/validation-content">Content Repository</a> | Licensed under MIT</p>
+    </footer>
+</body>
+</html>
