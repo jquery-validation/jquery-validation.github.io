@@ -24,12 +24,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - GITHUB_PAGES_SETUP.md
+  - entries
+  - convert_entries.py
 
 # Collections
 collections:
   entries:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:name/
 
 defaults:
   - scope:
