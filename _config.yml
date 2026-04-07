@@ -1,0 +1,37 @@
+title: jQuery Validation Plugin
+description: Site content for the jQuery Validation Plugin
+url: https://jqueryvalidation.org
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gruntfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
+  - config.json
+  - config-sample.json
+  - entries2html.xsl
+  - notes.xsl
+  - README.md
+  - LICENSE-MIT.txt
+  - .gitignore
+  - .gitattributes
+  - dist
+
+# Collections
+collections:
+  entries:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "entries"
+    values:
+      layout: "default"
