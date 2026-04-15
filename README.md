@@ -53,8 +53,8 @@ To test the site locally:
 - `documentation.md` - API documentation
 - `contribute.md` - Contribution guide
 - `reference.md` - General guidelines and reference
-- `entries/` - XML documentation entries (for API methods)
-- `pages/` - Original content files (kept for reference)
+- `_entries/` - Markdown documentation entries (for API methods, converted from XML)
+- `_layouts/` - Jekyll layout templates
 
 ### Deployment
 

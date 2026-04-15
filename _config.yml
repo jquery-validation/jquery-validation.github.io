@@ -8,14 +8,8 @@ markdown: kramdown
 
 # Exclude from processing
 exclude:
-  - Gruntfile.js
-  - package.json
-  - package-lock.json
   - node_modules
   - config.json
-  - config-sample.json
-  - entries2html.xsl
-  - notes.xsl
   - README.md
   - LICENSE-MIT.txt
   - .gitignore
@@ -24,8 +18,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - GITHUB_PAGES_SETUP.md
-  - entries
-  - convert_entries.py
   - CONVERSION_NOTES.md
 
 # Collections
