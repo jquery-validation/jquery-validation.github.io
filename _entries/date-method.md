@@ -1,5 +1,5 @@
 ---
-title: [DEPRECATED] date method
+title: "[DEPRECATED] date method"
 entry_name: date
 entry_type: method
 return_type: Boolean
