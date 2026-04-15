@@ -6,8 +6,8 @@ The `entries/` directory contained 39 XML files that defined the API documentati
 
 ## Conversion Process
 
-1. **Script**: `convert_entries.py` - Python script that parses XML and generates Markdown
-2. **Source**: `entries/*.xml` (39 files)
+1. **Script**: `convert_entries.py` - Python script that parsed XML and generated Markdown
+2. **Source**: `entries/*.xml` (39 files) - **[REMOVED]**
 3. **Output**: `_entries/*.md` (39 files)
 
 ## Conversion Details
@@ -36,7 +36,6 @@ The `_config.yml` has been configured to:
 - Define `entries` as a collection
 - Output entries with permalink pattern `/:name/`
 - Apply the default layout to all entries
-- Exclude the old `entries/` directory and conversion script from builds
 
 ## URL Mapping
 
@@ -48,30 +47,49 @@ With the permalink configuration, entries are accessible at:
 
 This matches the link structure already present in `documentation.md`.
 
-## Original XML Files
+## Repository Cleanup (Completed)
 
-The original XML files in the `entries/` directory are:
-- Excluded from Jekyll processing (in `_config.yml`)
-- Kept for reference
-- Can be removed once the conversion is verified in production
+The following old files were removed as they are no longer needed:
 
-## Testing
+### Old Build System
+- `Gruntfile.js` - Old Grunt build configuration
+- `package.json` / `package-lock.json` - Old npm dependencies for Grunt
+- `config-sample.json` - Sample config for old build system
 
-To verify the conversion:
-1. Check that all 39 entries are present in `_entries/`
-2. Verify front matter is correct for each file
-3. Ensure links in `documentation.md` resolve correctly
-4. Test the GitHub Pages deployment
+### Old XML Files and Tools
+- `entries/*.xml` (39 files) - Original XML sources (converted to markdown)
+- `entries2html.xsl` - XSL transformation for XML to HTML
+- `notes.xsl` - Additional XSL transformation file
+- `categories.xml` - XML categories definition
 
-## Files Created/Modified
+### Old Content Format
+- `pages/` directory - Contained old format files with custom JSON frontmatter
+  - `pages/index.html`
+  - `pages/contribute.md`
+  - `pages/documentation.md`
+  - `pages/reference.md`
+- These were duplicates of root files which have proper Jekyll front matter
 
-**Created:**
-- `_entries/*.md` (39 files)
-- `convert_entries.py`
-- This file (`CONVERSION_NOTES.md`)
+### Temporary Conversion Tools
+- `convert_entries.py` - One-time conversion script (no longer needed)
 
-**Modified:**
-- `_config.yml` - Updated collections, permalink, and excludes
+## Current Repository Structure
 
-**Preserved (for reference):**
-- `entries/*.xml` (39 files) - Original XML sources
+```
+validation-content/
+├── _config.yml              # Jekyll configuration
+├── _entries/                # API documentation (39 markdown files)
+├── _layouts/                # Jekyll templates
+├── .github/workflows/       # GitHub Actions for deployment
+├── index.md                 # Home page
+├── documentation.md         # Documentation index
+├── contribute.md           # Contribution guide
+├── reference.md            # Reference documentation
+├── README.md               # Repository documentation
+├── CONVERSION_NOTES.md     # This file
+├── GITHUB_PAGES_SETUP.md   # Setup instructions
+├── Gemfile                 # Ruby dependencies for Jekyll
+└── LICENSE-MIT.txt         # License file
+```
+
+All content is now in standard Jekyll/Markdown format, ready for GitHub Pages deployment.
