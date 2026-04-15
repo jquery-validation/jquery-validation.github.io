@@ -15,27 +15,32 @@
             color: #333;
         }
         header {
-            border-bottom: 2px solid #0066cc;
+            border-bottom: 2px solid #BF0130;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
         header h1 {
             margin: 0;
-            color: #0066cc;
+            color: #BF0130;
+        }
+        .site-logo {
+            display: block;
+            max-width: 100%;
+            height: 130px;
         }
         nav {
             margin-top: 15px;
         }
         nav a {
             margin-right: 20px;
-            color: #0066cc;
+            color: #cc005f;
             text-decoration: none;
         }
         nav a:hover {
             text-decoration: underline;
         }
         h1, h2, h3, h4, h5, h6 {
-            color: #0066cc;
+            color: #BF0130;
             margin-top: 1.5em;
         }
         code {
@@ -55,7 +60,7 @@
             padding: 0;
         }
         a {
-            color: #0066cc;
+            color: #BF0130;
         }
         footer {
             margin-top: 50px;
@@ -71,7 +76,11 @@
 </head>
 <body>
     <header>
-        <h1><a href="{{ site.baseurl }}/" style="color: #0066cc; text-decoration: none;">{{ site.title }}</a></h1>
+        <h1>
+            <a href="{{ site.baseurl }}/" aria-label="{{ site.title }}">
+                <img class="site-logo" src="{{ site.baseurl }}/assets/jquery-validation-logo.webp" alt="jQuery Validation Plugin">
+            </a>
+        </h1>
         <nav>
             <a href="{{ site.baseurl }}/">Home</a>
             <a href="{{ site.baseurl }}/documentation/">Documentation</a>
