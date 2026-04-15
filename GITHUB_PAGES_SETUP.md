@@ -6,6 +6,8 @@ This document explains how to enable GitHub Pages for this repository.
 
 The repository is configured to automatically deploy to GitHub Pages using GitHub Actions. The workflow is defined in `.github/workflows/deploy-pages.yml`.
 
+**Jekyll Version:** This site uses Jekyll 4.x, which is automatically handled by the GitHub Actions workflow.
+
 ## Enabling GitHub Pages
 
 To enable GitHub Pages for this repository, a repository administrator needs to:

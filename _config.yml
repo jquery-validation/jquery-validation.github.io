@@ -5,6 +5,9 @@ baseurl: "/validation-content"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 # Exclude from processing
 exclude:

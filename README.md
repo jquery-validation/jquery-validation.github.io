@@ -17,7 +17,7 @@ This site is automatically deployed to GitHub Pages using Jekyll.
 
 To test the site locally:
 
-1. Install Ruby and Bundler:
+1. Install Ruby 2.7 or higher and Bundler:
    ```bash
    gem install bundler
    ```
@@ -32,7 +32,9 @@ To test the site locally:
    bundle exec jekyll serve
    ```
 
-4. Open your browser to `http://localhost:4000`
+4. Open your browser to `http://localhost:4000/validation-content/`
+
+**Note:** This site uses Jekyll 4.x. If you encounter issues, ensure you have Ruby 2.7 or higher installed.
 
 ### Making Changes
 
