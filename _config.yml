@@ -11,17 +11,12 @@ kramdown:
 
 # Exclude from processing
 exclude:
-  - node_modules
-  - config.json
   - README.md
   - LICENSE-MIT.txt
   - .gitignore
   - .gitattributes
-  - dist
   - Gemfile
   - Gemfile.lock
-  - GITHUB_PAGES_SETUP.md
-  - CONVERSION_NOTES.md
 
 # Collections
 collections:
