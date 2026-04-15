@@ -14,7 +14,7 @@ Right, there are a lot of non-jQuery-based solutions (which you'd avoid since yo
 
 Not convinced? [Have a look at this example](https://jqueryvalidation.org/files/demo/):
 
-<pre><code>
+```html
 <form class="cmxform" id="commentForm" method="get" action="">
   <fieldset>
     <legend>Please provide your name, email address (won't be published) and a comment</legend>
@@ -42,7 +42,7 @@ Not convinced? [Have a look at this example](https://jqueryvalidation.org/files/
 <script>
 $("#commentForm").validate();
 </script>
-</code></pre>
+```
 
 ### Isn't that nice and easy?
 A single line of jQuery to select the form and apply the validation plugin, plus a few annotations on each element to specify the validation rules.
@@ -152,7 +152,7 @@ When you have a name attribute like user[name], make sure to put the name in quo
 
 Another common problem occurs with this code:
 
-<pre><code>
+```javascript
  $("#myform").validate({
   submitHandler: function(form) {
     // some other code
@@ -161,19 +161,19 @@ Another common problem occurs with this code:
     $(form).submit();
   }
  });
-</code></pre>
+```
 
 This results in a too-much-recursion error: <code>$(form).submit()</code> triggers another round of validation, resulting in another call to submitHandler, and voila, recursion. Replace that with form.submit(), which triggers the native submit event instead and not the validation.
 
 So the correct code looks slightly different:
 
-<pre><code>
+```javascript
  $("#myform").validate({
   submitHandler: function(form) {
     form.submit();
   }
  });
-</code></pre>
+```
 
 # Demos
 
