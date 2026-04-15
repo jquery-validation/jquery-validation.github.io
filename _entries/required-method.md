@@ -13,7 +13,7 @@ Makes the element required.
 
 ## Description
 
-Return false, if the element is empty (text input) or unchecked (radio/checkbox) or if nothing is selected (select). Works with text inputs, selects, checkboxes and radio buttons. To force a user to select an option from a select box, provide an empty option element like <option value="">Choose...</option> Note that white spaces are considered valid.
+Return false, if the element is empty (text input) or unchecked (radio/checkbox) or if nothing is selected (select). Works with text inputs, selects, checkboxes and radio buttons. To force a user to select an option from a select box, provide an empty option element like `<option value="">Choose...</option>`. Note that white spaces are considered valid.
 
 ## Usage
 

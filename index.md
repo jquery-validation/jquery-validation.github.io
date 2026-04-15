@@ -3,7 +3,7 @@ layout: default
 title: jQuery Validation Plugin
 ---
 
-This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options. It makes a good choice if you're building something new from scratch, but also when you're trying to integrate something into an existing application with lots of existing markup. The plugin comes bundled with a useful set of validation methods, including URL and email validation, while providing an API to write your own methods. All bundled methods come with default error messages in english and translations into 37 other languages.
+This jQuery plugin makes simple clientside form validation easy, whilst still offering plenty of customization options. It makes a good choice if you're building something new from scratch, but also when you're trying to integrate something into an existing application with lots of existing markup. The plugin comes bundled with a useful set of validation methods, including URL and email validation, while providing an API to write your own methods. All bundled methods come with default error messages in English and translations into 37 other languages.
 
 For a quick overview of what this plugin provides, check out this [Webucator](https://www.webucator.com/) video (they also provide [jQuery trainings](https://www.webucator.com/webdesign/jquery.cfm)):
 

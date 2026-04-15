@@ -61,7 +61,7 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
 
   **groups** *(Object)*
 
-  Specify grouping of error messages. A group consists of an arbitrary group name as the key and a space separated list of element names as the value. Use errorPlacement to control where the group message is placed. Example: Use a table layout for the form, placing error messags in the next cell after the input. $("#myform").validate({ groups: { username: "fname lname" }, errorPlacement: function(error, element) { if (element.attr("name") == "fname" || element.attr("name") == "lname" ) { error.insertAfter("#lastname"); } else { error.insertAfter(element); } } });
+  Specify grouping of error messages. A group consists of an arbitrary group name as the key and a space separated list of element names as the value. Use errorPlacement to control where the group message is placed. Example: Use a table layout for the form, placing error messages in the next cell after the input. $("#myform").validate({ groups: { username: "fname lname" }, errorPlacement: function(error, element) { if (element.attr("name") == "fname" || element.attr("name") == "lname" ) { error.insertAfter("#lastname"); } else { error.insertAfter(element); } } });
 
   **normalizer** *(Function)*
 
@@ -205,4 +205,4 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
 
   **ignoreTitle** *(Boolean)* (default: `false`)
 
-  Set to skip reading messages from the title attribute, helps to avoid issues with Google Toolbar; default is false for compability, the message-from-title is likely to be completely removed in a future release. Example: Configure the plugin to ignore title attributes on validated elements when looking for messages. $("#myform").validate({ ignoreTitle: true });
+  Set to skip reading messages from the title attribute, helps to avoid issues with Google Toolbar; default is false for compatibility, the message-from-title is likely to be completely removed in a future release. Example: Configure the plugin to ignore title attributes on validated elements when looking for messages. $("#myform").validate({ ignoreTitle: true });
