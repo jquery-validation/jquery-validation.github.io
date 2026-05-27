@@ -25,6 +25,8 @@ To test the site locally:
 2. Install dependencies:
    ```bash
    bundle install
+   npm install
+   npm run copy-libs
    ```
 
 3. Run Jekyll locally:

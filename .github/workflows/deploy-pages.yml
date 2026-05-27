@@ -26,6 +26,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install npm dependencies and copy libs
+        run: |
+          npm ci
+          npm run copy-libs
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 

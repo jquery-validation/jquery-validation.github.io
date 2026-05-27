@@ -4,7 +4,8 @@
   "description": "This repository contains the documentation and content for the [jQuery Validation Plugin](https://github.com/jquery-validation/jquery-validation) website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "copy-libs": "node -e \"const fs=require('fs');const path=require('path');const dir='lib';if(!fs.existsSync(dir))fs.mkdirSync(dir);const files=[['node_modules/jquery/dist/jquery.js','lib/jquery.js'],['node_modules/jquery-validation/dist/jquery.validate.js','lib/jquery.validate.js'],['node_modules/jquery-validation/dist/additional-methods.js','lib/additional-methods.js'],['node_modules/jquery-mockjax/dist/jquery.mockjax.js','lib/jquery.mockjax.js'],['node_modules/jquery-form/src/jquery.form.js','lib/jquery.form.js']];files.forEach(([s,d])=>fs.copyFileSync(s,d));console.log('Copied',files.length,'files to lib/');\""
   },
   "repository": {
     "type": "git",
