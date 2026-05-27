@@ -5,6 +5,7 @@ entry_type: method
 return_type: Boolean
 category: methods
 layout: default
+permalink: /equalTo-method/
 ---
 
 # equalTo method

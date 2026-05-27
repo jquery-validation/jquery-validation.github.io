@@ -4,6 +4,7 @@ entry_name: Validator.element
 entry_type: method
 category: validator
 layout: default
+permalink: /Validator.element/
 ---
 
 # Validator.element()

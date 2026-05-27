@@ -4,6 +4,7 @@ entry_name: jQuery.validator.addClassRules
 entry_type: method
 category: validator
 layout: default
+permalink: /jQuery.validator.addClassRules/
 ---
 
 # jQuery.validator.addClassRules()

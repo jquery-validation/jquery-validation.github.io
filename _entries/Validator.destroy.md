@@ -4,6 +4,7 @@ entry_name: Validator.destroy
 entry_type: method
 category: validator
 layout: default
+permalink: /Validator.destroy/
 ---
 
 # Validator.destroy()

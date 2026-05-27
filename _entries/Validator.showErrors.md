@@ -4,6 +4,7 @@ entry_name: Validator.showErrors
 entry_type: method
 category: validator
 layout: default
+permalink: /Validator.showErrors/
 ---
 
 # Validator.showErrors()

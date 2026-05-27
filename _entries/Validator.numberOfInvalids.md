@@ -4,6 +4,7 @@ entry_name: Validator.numberOfInvalids
 entry_type: method
 category: validator
 layout: default
+permalink: /Validator.numberOfInvalids/
 ---
 
 # Validator.numberOfInvalids()

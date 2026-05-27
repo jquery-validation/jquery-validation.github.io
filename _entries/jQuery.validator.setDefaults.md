@@ -4,6 +4,7 @@ entry_name: jQuery.validator.setDefaults
 entry_type: method
 category: validator
 layout: default
+permalink: /jQuery.validator.setDefaults/
 ---
 
 # jQuery.validator.setDefaults()

@@ -4,6 +4,7 @@ entry_name: Validator.form
 entry_type: method
 category: validator
 layout: default
+permalink: /Validator.form/
 ---
 
 # Validator.form()

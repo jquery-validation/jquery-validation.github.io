@@ -91,19 +91,19 @@ This library also extends jQuery with three custom selectors:
 
 The validate method returns a Validator object that has a few public methods that you can use to trigger validation programmatically or change the contents of the form. The validator object has more methods, but only those documented here are intended for usage.
 
-* [`Validator.form()` - Validates the form.](/validator-form)
-* [`Validator.element()` - Validates a single element.](/validator-element)
-* [`Validator.resetForm()` - Resets the controlled form.](/validator-resetform)
-* [`Validator.showErrors()` - Show the specified messages.](/validator-showerrors)
-* [`Validator.numberOfInvalids()` - Returns the number of invalid fields.](/validator-numberofinvalids)
-* [`Validator.destroy()` - Destroys this instance of validator.](/validator-destroy)
+* [`Validator.form()` - Validates the form.](/Validator.form/)
+* [`Validator.element()` - Validates a single element.](/Validator.element/)
+* [`Validator.resetForm()` - Resets the controlled form.](/Validator.resetForm/)
+* [`Validator.showErrors()` - Show the specified messages.](/Validator.showErrors/)
+* [`Validator.numberOfInvalids()` - Returns the number of invalid fields.](/Validator.numberOfInvalids/)
+* [`Validator.destroy()` - Destroys this instance of validator.](/Validator.destroy/)
 
 There are a few static methods on the validator object:
 
-* [`jQuery.validator.addMethod()` - Add a custom validation method.](/jquery-validator-addmethod)
-* [`jQuery.validator.format()` - Replaces {n} placeholders with arguments.](/jquery-validator-format)
-* [`jQuery.validator.setDefaults()` - Modify default settings for validation.](/jquery-validator-setdefaults)
-* [`jQuery.validator.addClassRules()` - Add a compound class method.](/jquery-validator-addclassrules)
+* [`jQuery.validator.addMethod()` - Add a custom validation method.](/jQuery.validator.addMethod/)
+* [`jQuery.validator.format()` - Replaces {n} placeholders with arguments.](/jQuery.validator.format/)
+* [`jQuery.validator.setDefaults()` - Modify default settings for validation.](/jQuery.validator.setDefaults/)
+* [`jQuery.validator.addClassRules()` - Add a compound class method.](/jQuery.validator.addClassRules/)
 
 ## List of built-in Validation methods
 
@@ -121,22 +121,22 @@ A set of standard validation methods is provided:
 * [`email` - Makes the element require a valid email](/email-method)
 * [`url` - Makes the element require a valid url](/url-method)
 * [`date` - Makes the element require a date.](/date-method)
-* [`dateISO` - Makes the element require an ISO date.](/dateiso-method)
+* [`dateISO` - Makes the element require an ISO date.](/dateISO-method/)
 * [`number` - Makes the element require a decimal number.](/number-method)
 * [`digits` - Makes the element require digits only.](/digits-method)
-* [`equalTo` - Requires the element to be the same as another one](/equalto-method)
+* [`equalTo` - Requires the element to be the same as another one](/equalTo-method/)
 
 Some more methods are provided as add-ons, and are currently included in additional-methods.js in the download package. Not all of them are documented here:
 
 * [`accept` - Makes a file upload accept only specified mime-types.](/accept-method)
 * [`creditcard` - Makes the element require a credit card number.](/creditcard-method)
 * [`extension` - Makes the element require a certain file extension.](/extension-method)
-* [`phoneUS` - Validate for valid US phone number.](/phoneus-method)
+* [`phoneUS` - Validate for valid US phone number.](/phoneUS-method/)
 * [`require_from_group` - Ensures a given number of fields in a group are complete.](/require-from-group-method)
 
 You can find the [source code for all additional methods in the GitHub repository](https://github.com/jzaefferer/jquery-validation/tree/master/src/additional).
 
-It is possible to re-define the implementation of the built-in rules using the [`$.validator.methods` property](/jquery-validator-methods/)
+It is possible to re-define the implementation of the built-in rules using the [`$.validator.methods` property](/jQuery.validator.methods/)
 
 # [General Guidelines](/reference)
 

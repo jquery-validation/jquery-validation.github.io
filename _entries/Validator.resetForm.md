@@ -4,6 +4,7 @@ entry_name: Validator.resetForm
 entry_type: method
 category: validator
 layout: default
+permalink: /Validator.resetForm/
 ---
 
 # Validator.resetForm()

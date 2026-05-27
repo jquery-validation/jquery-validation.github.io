@@ -4,6 +4,7 @@ entry_name: jQuery.validator.methods
 entry_type: method
 category: validator
 layout: default
+permalink: /jQuery.validator.methods/
 ---
 
 # jQuery.validator.methods
