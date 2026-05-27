@@ -204,10 +204,3 @@ Contributed by Michael Evangelista, showing a multipart form for buying and sell
 
 * Multipart, implemented using the jQuery UI accordion and a custom method to check if an element is on the current page when validated
 * Integration with masked-input plugin, see Phone and Zip fields
-
-## [Using remote validation to help with captchas](/demo/captcha/)
-Features remote validation for helping the user to fill out captchas.
-
-*Notable features of the demo:*
-
-* Remote validation to check if the user entered the correct captcha, without forcing him to submit the form first
