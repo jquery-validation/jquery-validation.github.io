@@ -25,17 +25,9 @@ The name of the method used to identify it and referencing it; this must be a va
 
 The actual method implementation, returning true if an element is valid. First argument: Current value. Second argument: Validated element. Third argument: Parameters.
 
-  **value** *(String)*
-
-  the current value of the validated element
-
-  **element** *(Element)*
-
-  the element to be validated
-
-  **params** *(Object)*
-
-  parameters specified for the method, e.g. for min: 5, the parameter is 5, for range: [1, 5] it's [1, 5]
+- **value** *(String)* - the current value of the validated element
+- **element** *(Element)* - the element to be validated
+- **params** *(Object)* - parameters specified for the method, e.g. for min: 5, the parameter is 5, for range: [1, 5] it's [1, 5]
 
 **message** *(String)* (optional)
 

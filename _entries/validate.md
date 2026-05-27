@@ -25,11 +25,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Prevents the form from submitting and tries to help setting up the validation with warnings about missing methods and other debug messages.
     
-    ```javascript
-    $("#myform").validate({
-      debug: true
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    debug: true
+  });
+  ```
 
 - **submitHandler** *(Function)* (default: `native form submit`)
 
@@ -37,24 +37,24 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Submits the form via Ajax, using [jQuery Form plugin](http://jquery.malsup.com/form), when valid.
     
-    ```javascript
-    $("#myform").validate({
-      submitHandler: function(form) {
-        $(form).ajaxSubmit();
-      }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    submitHandler: function(form) {
+      $(form).ajaxSubmit();
+    }
+  });
+  ```
     
     **Example:** Use submitHandler to process something and then using the default submit. Note that "form" refers to a DOM element, this way the validation isn't triggered again.
     
-    ```javascript
-    $("#myform").validate({
-      submitHandler: function(form) {
-        // do other things for a valid form
-        form.submit();
-      }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    submitHandler: function(form) {
+      // do other things for a valid form
+      form.submit();
+    }
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -67,23 +67,23 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Displays a message above the form, indicating how many fields are invalid when the user tries to submit an invalid form.
     
-    ```javascript
-    $("#myform").validate({
-      invalidHandler: function(event, validator) {
-        // 'this' refers to the form
-        var errors = validator.numberOfInvalids();
-        if (errors) {
-          var message = errors == 1
-            ? 'You missed 1 field. It has been highlighted'
-            : 'You missed ' + errors + ' fields. They have been highlighted';
-          $("div.error span").html(message);
-          $("div.error").show();
-        } else {
-          $("div.error").hide();
-        }
+  ```javascript
+  $("#myform").validate({
+    invalidHandler: function(event, validator) {
+      // 'this' refers to the form
+      var errors = validator.numberOfInvalids();
+      if (errors) {
+        var message = errors == 1
+          ? 'You missed 1 field. It has been highlighted'
+          : 'You missed ' + errors + ' fields. They have been highlighted';
+        $("div.error span").html(message);
+        $("div.error").show();
+      } else {
+        $("div.error").hide();
       }
-    });
-    ```
+    }
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -96,11 +96,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Ignores all elements with the class "ignore" when validating.
     
-    ```javascript
-    $("#myform").validate({
-      ignore: ".ignore"
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    ignore: ".ignore"
+  });
+  ```
 
 - **rules** *(Object)* (default: `rules are read from markup (classes, attributes, data)`)
 
@@ -108,56 +108,56 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Specifies a name element as required and an email element as required (using the shortcut for a single rule) and a valid email address (using another object literal).
     
-    ```javascript
-    $("#myform").validate({
-      rules: {
-        // simple rule, converted to {required:true}
-        name: "required",
-        // compound rule
-        email: {
-          required: true,
-          email: true
-        }
+  ```javascript
+  $("#myform").validate({
+    rules: {
+      // simple rule, converted to {required:true}
+      name: "required",
+      // compound rule
+      email: {
+        required: true,
+        email: true
       }
-    });
-    ```
+    }
+  });
+  ```
     
     **Example:** Specifies a contact element as required and as email address, the latter depending on a checkbox being checked for contact via email.
     
-    ```javascript
-    $("#myform").validate({
-      rules: {
-        contact: {
-          required: true,
-          email: {
-            depends: function(element) {
-              return $("#contactform_email").is(":checked");
-            }
+  ```javascript
+  $("#myform").validate({
+    rules: {
+      contact: {
+        required: true,
+        email: {
+          depends: function(element) {
+            return $("#contactform_email").is(":checked");
           }
         }
       }
-    });
-    ```
+    }
+  });
+  ```
     
     **Example:** Configure a rule that requires a parameter, along with a `depends` callback.
     
-    ```javascript
-    $("#myform").validate({
-      rules: {
-        // at least 15€ when bonus material is included
-        pay_what_you_want: {
-          required: true,
-          min: {
-            // min needs a parameter passed to it
-            param: 15,
-            depends: function(element) {
-              return $("#bonus-material").is(":checked");
-            }
+  ```javascript
+  $("#myform").validate({
+    rules: {
+      // at least 15€ when bonus material is included
+      pay_what_you_want: {
+        required: true,
+        min: {
+          // min needs a parameter passed to it
+          param: 15,
+          depends: function(element) {
+            return $("#bonus-material").is(":checked");
           }
         }
       }
-    });
-    ```
+    }
+  });
+  ```
 
 - **messages** *(Object)* (default: `the default message for the method used`)
 
@@ -165,43 +165,43 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Specifies a name element as required and an email element as required and a valid email address. A single message is specified for the name element, and two messages for email.
     
-    ```javascript
-    $("#myform").validate({
-      rules: {
-        name: "required",
-        email: {
-          required: true,
-          email: true
-        }
-      },
-      messages: {
-        name: "Please specify your name",
-        email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
-        }
+  ```javascript
+  $("#myform").validate({
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
       }
-    });
-    ```
+    },
+    messages: {
+      name: "Please specify your name",
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      }
+    }
+  });
+  ```
     
     **Example:** Validates the name-field as required and having at least two characters. Provides a callback message using jQuery.validator.format to avoid having to specify the parameter in two places.
     
-    ```javascript
-    $("#myform").validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 2
-        }
-      },
-      messages: {
-        name: {
-          required: "We need your email address to contact you",
-          minlength: jQuery.validator.format("At least {0} characters required!")
-        }
+  ```javascript
+  $("#myform").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
       }
-    });
-    ```
+    },
+    messages: {
+      name: {
+        required: "We need your email address to contact you",
+        minlength: jQuery.validator.format("At least {0} characters required!")
+      }
+    }
+  });
+  ```
 
 - **groups** *(Object)*
 
@@ -209,20 +209,20 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Use a table layout for the form, placing error messages in the next cell after the input.
     
-    ```javascript
-    $("#myform").validate({
-      groups: {
-        username: "fname lname"
-      },
-      errorPlacement: function(error, element) {
-        if (element.attr("name") == "fname" || element.attr("name") == "lname") {
-          error.insertAfter("#lastname");
-        } else {
-          error.insertAfter(element);
-        }
+  ```javascript
+  $("#myform").validate({
+    groups: {
+      username: "fname lname"
+    },
+    errorPlacement: function(error, element) {
+      if (element.attr("name") == "fname" || element.attr("name") == "lname") {
+        error.insertAfter("#lastname");
+      } else {
+        error.insertAfter(element);
       }
-    });
-    ```
+    }
+  });
+  ```
 
 - **normalizer** *(Function)*
 
@@ -234,11 +234,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Disables onsubmit validation, allowing the user to submit whatever he wants, while still validating on keyup/blur/click events (if not specified otherwise).
     
-    ```javascript
-    $("#myform").validate({
-      onsubmit: false
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    onsubmit: false
+  });
+  ```
 
 - **onfocusout** *(Boolean | Function)*
 
@@ -246,11 +246,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Disables focusout validation.
     
-    ```javascript
-    $("#myform").validate({
-      onfocusout: false
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    onfocusout: false
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -263,11 +263,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Disables onkeyup validation.
     
-    ```javascript
-    $("#myform").validate({
-      onkeyup: false
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    onkeyup: false
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -280,11 +280,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Disables onclick validation of checkboxes, radio buttons, and select elements.
     
-    ```javascript
-    $("#myform").validate({
-      onclick: false
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    onclick: false
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -297,11 +297,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Disables focusing of invalid elements.
     
-    ```javascript
-    $("#myform").validate({
-      focusInvalid: false
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    focusInvalid: false
+  });
+  ```
 
 - **focusCleanup** *(Boolean)* (default: `false`)
 
@@ -309,11 +309,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Enables cleanup when focusing elements, removing the error class and hiding error messages when an element is focused.
     
-    ```javascript
-    $("#myform").validate({
-      focusCleanup: true
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    focusCleanup: true
+  });
+  ```
 
 - **errorClass** *(String)* (default: `"error"`)
 
@@ -321,11 +321,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Sets the error class to "invalid".
     
-    ```javascript
-    $("#myform").validate({
-      errorClass: "invalid"
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    errorClass: "invalid"
+  });
+  ```
 
 - **validClass** *(String)* (default: `"valid"`)
 
@@ -333,11 +333,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Sets the valid class to "success".
     
-    ```javascript
-    $("#myform").validate({
-      validClass: "success"
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    validClass: "success"
+  });
+  ```
 
 - **errorElement** *(String)* (default: `"label"`)
 
@@ -345,11 +345,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Sets the error element to "em".
     
-    ```javascript
-    $("#myform").validate({
-      errorElement: "em"
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    errorElement: "em"
+  });
+  ```
 
 - **wrapper** *(String)* (default: `window`)
 
@@ -357,11 +357,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Wrap each error element with a list item, useful when using an ordered or unordered list as the error container.
     
-    ```javascript
-    $("#myform").validate({
-      wrapper: "li"
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    wrapper: "li"
+  });
+  ```
 
 - **errorLabelContainer** *(Selector)*
 
@@ -369,13 +369,13 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** All error labels are displayed inside an unordered list with the ID "messageBox", as specified by the selector passed as errorContainer option. All error elements are wrapped inside a li element, to create a list of messages.
     
-    ```javascript
-    $("#myform").validate({
-      errorLabelContainer: "#messageBox",
-      wrapper: "li",
-      submitHandler: function() { alert("Submitted!") }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    errorLabelContainer: "#messageBox",
+    wrapper: "li",
+    submitHandler: function() { alert("Submitted!") }
+  });
+  ```
 
 - **errorContainer** *(Selector)*
 
@@ -383,15 +383,15 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Uses an additonal container for error messages. The elements given as the errorContainer are all shown and hidden when errors occur. However, the error labels themselves are added to the element(s) given as errorLabelContainer, here an unordered list. Therefore the error labels are also wrapped into li elements (wrapper option).
     
-    ```javascript
-    $("#myform").validate({
-      errorContainer: "#messageBox1, #messageBox2",
-      errorLabelContainer: "#messageBox1 ul",
-      wrapper: "li",
-      debug:true,
-      submitHandler: function() { alert("Submitted!") }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    errorContainer: "#messageBox1, #messageBox2",
+    errorLabelContainer: "#messageBox1 ul",
+    wrapper: "li",
+    debug:true,
+    submitHandler: function() { alert("Submitted!") }
+  });
+  ```
 
 - **showErrors** *(Function)*
 
@@ -399,14 +399,14 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Update the number of invalid elements each time an error is displayed. Delegates to the default implementation for the actual error display.
     
-    ```javascript
-    $("#myform").validate({
-      showErrors: function(errorMap, errorList) {
-        $("#summary").html("Your form contains " + this.numberOfInvalids() + " errors, see details below.");
-        this.defaultShowErrors();
-      }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    showErrors: function(errorMap, errorList) {
+      $("#summary").html("Your form contains " + this.numberOfInvalids() + " errors, see details below.");
+      this.defaultShowErrors();
+    }
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -421,13 +421,13 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Use a table layout for the form, placing error messages in the next cell after the input.
     
-    ```javascript
-    $("#myform").validate({
-      errorPlacement: function(error, element) {
-        error.appendTo( element.parent("td").next("td") );
-      }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    errorPlacement: function(error, element) {
+      error.appendTo( element.parent("td").next("td") );
+    }
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -440,23 +440,23 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Add a class "valid" to valid elements, styled via CSS.
     
-    ```javascript
-    $("#myform").validate({
-      success: "valid",
-      submitHandler: function() { alert("Submitted!") }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    success: "valid",
+    submitHandler: function() { alert("Submitted!") }
+  });
+  ```
     
     **Example:** Add a class "valid" to valid elements, styled via CSS, and add the text "Ok!".
     
-    ```javascript
-    $("#myform").validate({
-      success: function(label) {
-        label.addClass("valid").text("Ok!")
-      },
-      submitHandler: function() { alert("Submitted!") }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    success: function(label) {
+      label.addClass("valid").text("Ok!")
+    },
+    submitHandler: function() { alert("Submitted!") }
+  });
+  ```
     
     The callback gets passed two arguments:
 
@@ -469,32 +469,32 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Highlights an invalid element by fading it out and in again.
     
-    ```javascript
-    $("#myform").validate({
-      highlight: function(element, errorClass) {
-        $(element).fadeOut(function() {
-          $(element).fadeIn();
-        });
-      }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    highlight: function(element, errorClass) {
+      $(element).fadeOut(function() {
+        $(element).fadeIn();
+      });
+    }
+  });
+  ```
     
     **Example:** Adds the error class to both the invalid element and its label
     
-    ```javascript
-    $("#myform").validate({
-      highlight: function(element, errorClass, validClass) {
-        $(element).addClass(errorClass).removeClass(validClass);
-        $(element.form).find("label[for=" + element.id + "]")
-          .addClass(errorClass);
-      },
-      unhighlight: function(element, errorClass, validClass) {
-        $(element).removeClass(errorClass).addClass(validClass);
-        $(element.form).find("label[for=" + element.id + "]")
-          .removeClass(errorClass);
-      }
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    highlight: function(element, errorClass, validClass) {
+      $(element).addClass(errorClass).removeClass(validClass);
+      $(element.form).find("label[for=" + element.id + "]")
+        .addClass(errorClass);
+    },
+    unhighlight: function(element, errorClass, validClass) {
+      $(element).removeClass(errorClass).addClass(validClass);
+      $(element.form).find("label[for=" + element.id + "]")
+        .removeClass(errorClass);
+    }
+  });
+  ```
     
     The callback gets passed three arguments:
 
@@ -512,8 +512,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     
     **Example:** Configure the plugin to ignore title attributes on validated elements when looking for messages.
     
-    ```javascript
-    $("#myform").validate({
-      ignoreTitle: true
-    });
-    ```
+  ```javascript
+  $("#myform").validate({
+    ignoreTitle: true
+  });
+  ```
