@@ -13,16 +13,16 @@ The plugin was initially written and maintained by [Jörn Zaefferer](http://bass
 
 Starting with Version 1.15.0 [Markus Staab](https://github.com/staabm) took over the maintenance of the codebase in February 2016. Since July 2016 [Brahim Arkni](https://github.com/Arkni) assisted Markus, and a few months later Brahim joined the jQuery Validation core team.
 
-**Current version:** 1.19.5
+**Current version:** 1.22.1
 
 **License:** MIT
 
 ### Files:
-- [Download](https://github.com/jzaefferer/jquery-validation/releases/tag/1.19.5) - zip-Archive with source code, minified and packed version, demos and examples
-- [Changelog](https://github.com/jzaefferer/jquery-validation/releases/tag/1.19.5)
+- [Download](https://github.com/jquery-validation/jquery-validation/releases/tag/1.22.1) - zip-Archive with source code, minified and packed version, demos and examples
+- [Changelog](https://github.com/jquery-validation/jquery-validation/releases/tag/1.22.1)
 - [Demos](/demo/)
 - [Documentation](documentation/)
-- [GitHub Repository](https://github.com/jzaefferer/jquery-validation)
+- [GitHub Repository](https://github.com/jquery-validation/jquery-validation)
 
 ### Installation via Package Managers
 - Bower: `bower install jquery-validation`
@@ -30,16 +30,16 @@ Starting with Version 1.15.0 [Markus Staab](https://github.com/staabm) took over
 - [NPM](https://www.npmjs.com/package/jquery-validation): `npm i jquery-validation`
 
 ### [Latest files on jsDelivr CDN](https://www.jsdelivr.com/package/npm/jquery-validation) (hotlinking welcome):
-- [https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js)
-- [https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js)
-- [https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js)
-- [https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js)
+- [https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/jquery.validate.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/jquery.validate.js)
+- [https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/jquery.validate.min.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/jquery.validate.min.js)
+- [https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.js)
+- [https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.min.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.min.js)
 
 ### [Latest files on cdnjs CDN](https://cdnjs.com/libraries/jquery-validate) (hotlinking welcome):
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.min.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.min.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.min.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.min.js)
 
 ### Dependencies
 #### Required
@@ -47,4 +47,4 @@ Starting with Version 1.15.0 [Markus Staab](https://github.com/staabm) took over
 
 ### Support
 - Please post questions to the [official using jQuery Plugins Forum](https://forum.jquery.com/using-jquery-plugins), tagging your question with (at least) "validate". Keep your question short and succinct and provide code when possible; a testpage makes it much more likely that you get an useful answer in a shorter time.
-- Please post bug reports and other contributions (enhancements, features, eg. new validation methods) to the [GitHub issue tracker](https://github.com/jzaefferer/jquery-validation/issues)
+- Please post bug reports and other contributions (enhancements, features, eg. new validation methods) to the [GitHub issue tracker](https://github.com/jquery-validation/jquery-validation/issues)
