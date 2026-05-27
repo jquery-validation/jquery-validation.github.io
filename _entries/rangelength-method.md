@@ -17,9 +17,16 @@ Return false if the element is some kind of text input and its length is too sho
 
 ## Usage
 
+### `rangelength( range )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **range** *(Array)*
 
 Value range required
+
+</div>
 
 ## Examples
 

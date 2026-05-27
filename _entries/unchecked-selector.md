@@ -18,6 +18,14 @@ Inversion of [:checked](https://api.jquery.com/checked).
 
 ## Usage
 
+### `:unchecked Selector`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

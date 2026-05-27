@@ -17,9 +17,16 @@ Keys have to refer to the names of elements, values are displayed for those elem
 
 ## Usage
 
+### `Validator.showErrors( errors )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **errors** *(Object)*
 
 One or more key/value pairs of input names and messages.
+
+</div>
 
 ## Examples
 

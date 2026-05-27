@@ -17,9 +17,14 @@ This depends on the internal validator state. It covers all fields only after va
 
 ## Usage
 
-**errors** *(Object)*
+### `Validator.numberOfInvalids()`
+{:.signature}
 
-One or more key/value pairs of input names and messages.
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

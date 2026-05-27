@@ -17,6 +17,14 @@ Resets input fields to their original value (requires form plugin), removes clas
 
 ## Usage
 
+### `Validator.resetForm()`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

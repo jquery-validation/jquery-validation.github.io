@@ -17,9 +17,16 @@ Transform the value of an element and the result for validation instead of the i
 
 ## Usage
 
+### `normalizer( value )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **value** *(String)*
 
 The value of the element.
+
+</div>
 
 ## Examples
 

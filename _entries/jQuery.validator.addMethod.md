@@ -17,6 +17,11 @@ For simple one-off validation, you can use the bundled `pattern` method (in addi
 
 ## Usage
 
+### `jQuery.validator.addMethod( name, method [, message ] )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **name** *(String)*
 
 The name of the method used to identify it and referencing it; this must be a valid JavaScript identifier
@@ -32,6 +37,8 @@ The actual method implementation, returning true if an element is valid. First a
 **message** *(String)* (optional)
 
 The default message to display for this method. Can be a function created by ''jQuery.validator.format(value)''. When undefined, an existing message is used (handy for localization), otherwise the field-specific messages have to be defined.
+
+</div>
 
 ## Examples
 

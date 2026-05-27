@@ -17,6 +17,14 @@ Checks whether the selected form is valid or whether all selected elements are v
 
 ## Usage
 
+### `.valid()`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

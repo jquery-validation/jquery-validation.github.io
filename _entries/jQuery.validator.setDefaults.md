@@ -17,9 +17,16 @@ Accepts everything that [validate()](/validate) accepts.
 
 ## Usage
 
+### `jQuery.validator.setDefaults( options )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **options** *(Object)*
 
 Options to set as default.
+
+</div>
 
 ## Examples
 

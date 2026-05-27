@@ -17,9 +17,16 @@ Works with text inputs. To exclude the minimum value, add Number.MIN_VALUE to th
 
 ## Usage
 
+### `min( value )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **value** *(Number)*
 
 Minimum value required
+
+</div>
 
 ## Examples
 

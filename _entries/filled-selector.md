@@ -18,6 +18,14 @@ filled means any value, but not only whitespace. The implementation does a check
 
 ## Usage
 
+### `:filled Selector`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

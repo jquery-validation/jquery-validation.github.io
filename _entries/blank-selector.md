@@ -18,6 +18,14 @@ Blank means either no value at all or only whitespace. The implementation does a
 
 ## Usage
 
+### `:blank Selector`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

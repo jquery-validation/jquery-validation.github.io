@@ -17,9 +17,16 @@ Uses the HTML5 file API to look at the type attribute of one or more selected fi
 
 ## Usage
 
+### `accept( mimetype )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **mimetype** *(String)*
 
 The allowed type, seperated via ",", defaults to "image/*"
+
+</div>
 
 ## Examples
 

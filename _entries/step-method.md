@@ -17,9 +17,16 @@ Works with text inputs. No support for input types: date, datetime, datetime-loc
 
 ## Usage
 
+### `step( value )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **value** *(Number)*
 
 Step value required
+
+</div>
 
 ## Examples
 

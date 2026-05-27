@@ -17,6 +17,11 @@ One or more arguments can be passed, in addition to the string template itself, 
 
 ## Usage
 
+### `jQuery.validator.format( template, argument, argumentN... )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **template** *(String)*
 
 The string to format.
@@ -28,6 +33,8 @@ The first argument to insert, or an array of Strings to insert
 **argumentN...** *(Object)*
 
 The second etc. argument to insert
+
+</div>
 
 ## Examples
 

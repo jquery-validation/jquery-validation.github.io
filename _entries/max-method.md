@@ -17,9 +17,16 @@ Works with text inputs. To exclude the maximum value, subtract Number.MIN_VALUE 
 
 ## Usage
 
+### `max( value )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **value** *(Number)*
 
 Maximum value required
+
+</div>
 
 ## Examples
 

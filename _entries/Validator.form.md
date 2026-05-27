@@ -17,6 +17,14 @@ This behaves as a normal submit event, but returns the result.
 
 ## Usage
 
+### `Validator.form()`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

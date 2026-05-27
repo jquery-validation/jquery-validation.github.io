@@ -17,6 +17,14 @@ This is only useful, when you need to clean up after the validator in a Single P
 
 ## Usage
 
+### `Validator.destroy()`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
+This signature does not accept any arguments.
+
+</div>
 
 ## Examples
 

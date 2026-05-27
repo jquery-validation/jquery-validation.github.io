@@ -17,6 +17,11 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
 
 ## Usage
 
+### `.validate( options )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **options** *(Object)* (optional)
 
 - **debug** *(Boolean)* (default: `false`)
@@ -517,3 +522,5 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
     ignoreTitle: true
   });
   ```
+
+</div>

@@ -18,9 +18,16 @@ Returns true if the value has the same value as the element specified by the fir
 
 ## Usage
 
+### `equalTo( other )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **other** *(Selector)*
 
 The selector for the element to compare the current values
+
+</div>
 
 ## Examples
 

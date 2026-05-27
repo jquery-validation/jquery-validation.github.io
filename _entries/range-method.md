@@ -17,9 +17,16 @@ Works with text inputs. To exclude the maximum value, subtract Number.MIN_VALUE 
 
 ## Usage
 
+### `range( range )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **range** *(Array)*
 
 Value range required
+
+</div>
 
 ## Examples
 

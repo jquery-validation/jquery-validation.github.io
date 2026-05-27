@@ -17,9 +17,16 @@ Return false if the element is some kind of text input and its value is too shor
 
 ## Usage
 
+### `minlength( length )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
+
 **length** *(Number)*
 
 Minimum number of characters required
+
+</div>
 
 ## Examples
 
