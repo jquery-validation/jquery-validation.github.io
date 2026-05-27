@@ -58,13 +58,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **form** *(Element)*
-
-    The form currently being validated, as a DOMElement.
-
-    **event** *(Event)*
-
-    The submit event instance.
+  - **form** *(Element)* - The form currently being validated, as a DOMElement.
+  - **event** *(Event)* - The submit event instance.
 
   **invalidHandler** *(Function)*
 
@@ -92,13 +87,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **event** *(Event)*
-
-    A custom event object, since this function is bound as an event handler.
-
-    **validator** *(Validator)*
-
-    The validator instance for the current form.
+  - **event** *(Event)* - A custom event object, since this function is bound as an event handler.
+  - **validator** *(Validator)* - The validator instance for the current form.
 
   **ignore** *(Selector)* (default: `":hidden"`)
 
@@ -264,13 +254,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **element** *(Element)*
-
-    The element currently being validated, as a DOMElement.
-
-    **event** *(Event)*
-
-    The event object for this focusout event.
+  - **element** *(Element)* - The element currently being validated, as a DOMElement.
+  - **event** *(Event)* - The event object for this focusout event.
 
   **onkeyup** *(Boolean | Function)*
 
@@ -286,13 +271,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **element** *(Element)*
-
-    The element currently being validated, as a DOMElement.
-
-    **event** *(Event)*
-
-    The event object for this keyup event.
+  - **element** *(Element)* - The element currently being validated, as a DOMElement.
+  - **event** *(Event)* - The event object for this keyup event.
 
   **onclick** *(Boolean | Function)*
 
@@ -308,13 +288,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **element** *(Element)*
-
-    The element currently being validated, as a DOMElement.
-
-    **event** *(Event)*
-
-    The event object for this click event.
+  - **element** *(Element)* - The element currently being validated, as a DOMElement.
+  - **event** *(Event)* - The event object for this click event.
 
   **focusInvalid** *(Boolean)* (default: `true`)
 
@@ -435,21 +410,10 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **errorMap** *(Object)*
-
-    Key/value pairs, where the key refers to the name of an input field, values the message to be displayed for that input.
-
-    **errorList** *(Array)*
-
-    An array for all currently validated elements. Contains objects with the following two properties:
-
-      **message** *(String)*
-
-      The message to be displayed for an input.
-
-      **element** *(Element)*
-
-      The DOMElement for this entry.
+  - **errorMap** *(Object)* - Key/value pairs, where the key refers to the name of an input field, values the message to be displayed for that input.
+  - **errorList** *(Array)* - An array for all currently validated elements. Contains objects with the following two properties:
+    - **message** *(String)* - The message to be displayed for an input.
+    - **element** *(Element)* - The DOMElement for this entry.
 
   **errorPlacement** *(Function)* (default: `Places the error label after the invalid element`)
 
@@ -467,13 +431,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **error** *(jQuery)*
-
-    The error label to insert into the DOM.
-
-    **element** *(jQuery)*
-
-    The validated input, for relative positioning.
+  - **error** *(jQuery)* - The error label to insert into the DOM.
+  - **element** *(jQuery)* - The validated input, for relative positioning.
 
   **success** *(String | Function)*
 
@@ -501,13 +460,8 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed two arguments:
 
-    **label** *(jQuery)*
-
-    The error label. Use to add a class or replace the text content.
-
-    **element** *(Element)*
-
-    The element currently being validated, as a DOMElement.
+  - **label** *(jQuery)* - The error label. Use to add a class or replace the text content.
+  - **element** *(Element)* - The element currently being validated, as a DOMElement.
 
   **highlight** *(Function)* (default: `Adds errorClass (see the option) to the element`)
 
@@ -544,17 +498,9 @@ This method sets up event handlers for submit, focus, keyup, blur and click to t
   
   The callback gets passed three arguments:
 
-    **element** *(Element)*
-
-    The invalid DOM element, usually an `input`.
-
-    **errorClass** *(String)*
-
-    Current value of the `errorClass` option.
-
-    **validClass** *(String)*
-
-    Current value of the `validClass` option.
+  - **element** *(Element)* - The invalid DOM element, usually an `input`.
+  - **errorClass** *(String)* - Current value of the `errorClass` option.
+  - **validClass** *(String)* - Current value of the `validClass` option.
 
   **unhighlight** *(Function)* (default: `Removes the errorClass`)
 
