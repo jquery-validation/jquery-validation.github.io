@@ -13,7 +13,10 @@ Add a compound class method - useful to refactor common combinations of rules in
 
 ## Usage
 
-### Form 1
+### `jQuery.validator.addClassRules( name, rules )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
 
 **name** *(String)*
 
@@ -23,11 +26,18 @@ The name of the class rule to add
 
 The compound rules (see example)
 
-### Form 2
+</div>
+
+### `jQuery.validator.addClassRules( rules )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
 
 **rules** *(Object)*
 
 A map of className-rules pairs (see example).
+
+</div>
 
 ## Examples
 

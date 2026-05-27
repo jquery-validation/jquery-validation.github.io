@@ -17,13 +17,19 @@ Returns the validations rules for the first selected element or Adds the specifi
 
 ## Usage
 
-### Form 1
+### `.rules()`
+{:.signature}
 
-Read rules for the first element
+<div class="signature-body" markdown="1">
 
-### Form 2
+Returns the validation rules for the first selected element.
 
-Add rules
+</div>
+
+### `.rules( "add", rules )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
 
 **"add"** *(String)*
 
@@ -31,15 +37,20 @@ Add rules
 
 The rules to add. Accepts the same format as the rules-option of the validate-method.
 
-### Form 3
+</div>
 
-Remove rules
+### `.rules( "remove", rules )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
 
 **"remove"** *(String)*
 
 **rules** *(Object)*
 
 The space-seperated names of rules to remove and return. If left unspecified, removes and returns all rules. Manipulates only rules specified via rules-option or via rules("add").
+
+</div>
 
 ## Examples
 

@@ -17,25 +17,36 @@ Return false, if the element is empty (text input) or unchecked (radio/checkbox)
 
 ## Usage
 
-### Form 1
+### `required()`
+{:.signature}
 
-The element is always required.
+<div class="signature-body" markdown="1">
 
-### Form 2
+This signature does not accept any arguments.
 
-Makes the element required, depending on the result of the given expression.
+</div>
+
+### `required( dependency-expression )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
 
 **dependency-expression** *(String)*
 
 An expression (String) that is evaluated in the context of the element's form, making the field required only if the expression returns more than one element. Very often your expression will use selector filters such as `#foo:checked`, `#foo:filled`, `#foo:visible`. This plugin provides [custom selectors for that purpose](/documentation#custom-selectors).
 
-### Form 3
+</div>
 
-Makes the element required, depending on the result of the given callback.
+### `required( dependency-callback )`
+{:.signature}
+
+<div class="signature-body" markdown="1">
 
 **dependency-callback** *(Function)*
 
 The function is executed with the element as it's only argument: If it returns true, the element is required.
+
+</div>
 
 ## Examples
 
