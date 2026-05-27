@@ -1,0 +1,27 @@
+{
+  "name": "validation-content",
+  "version": "1.0.0",
+  "description": "This repository contains the documentation and content for the [jQuery Validation Plugin](https://github.com/jquery-validation/jquery-validation) website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jquery-validation/validation-content.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jquery-validation/validation-content/issues"
+  },
+  "homepage": "https://github.com/jquery-validation/validation-content#readme",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "jquery-form": "^4.3.0",
+    "jquery-mockjax": "^3.0.1",
+    "jquery-validation": "^1.22.1"
+  }
+}

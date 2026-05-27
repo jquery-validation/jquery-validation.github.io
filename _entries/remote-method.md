@@ -13,7 +13,7 @@ Requests a resource to check the element for validity.
 
 ## Description
 
-The serverside resource is called via jQuery.ajax (XMLHttpRequest) and gets a key/value pair corresponding to the name of the validated element and its value as a GET parameter. The serverside response must be a JSON string that must be `"true"` for valid elements, and can be `"false"`, `undefined`, or `null` for invalid elements, using the default error message. If the serverside response is a string, eg. `"That name is already taken, try peter123 instead"`, this string will be displayed as a custom error message in place of the default. For more examples, take a look the [marketo demo](//jqueryvalidation.org/files/demo/marketo) and the [milk demo](//jqueryvalidation.org/files/demo/milk/).
+The serverside resource is called via jQuery.ajax (XMLHttpRequest) and gets a key/value pair corresponding to the name of the validated element and its value as a GET parameter. The serverside response must be a JSON string that must be `"true"` for valid elements, and can be `"false"`, `undefined`, or `null` for invalid elements, using the default error message. If the serverside response is a string, eg. `"That name is already taken, try peter123 instead"`, this string will be displayed as a custom error message in place of the default. For more examples, take a look the [marketo demo](/demo/marketo) and the [milk demo](/demo/milk/).
 
 ## Usage
 
