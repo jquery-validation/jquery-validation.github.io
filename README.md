@@ -1,35 +1,69 @@
-jqueryvalidation-content
-========================
+# jQuery Validation Plugin - Content Repository
 
-## Building
+This repository contains the documentation and content for the [jQuery Validation Plugin](https://github.com/jquery-validation/jquery-validation) website.
 
-### Requirements
+## GitHub Pages Deployment
 
-* <a href="http://www.xmlsoft.org/">libxml2</a>
-* <a href="http://xmlsoft.org/XSLT/">libxslt</a>
+This site is automatically deployed to GitHub Pages using Jekyll.
 
-The `xmllint` and `xsltproc` utilities need to be in your path. If you are on Windows, you can get libxml2 and libxslt from <a href="http://www.zlatkovic.com/libxml.en.html">GnuWin32</a>.
+### How it Works
 
-* Install [WordPress](http://wordpress.org/download/)
-* Install [jqueryvalidation-theme](https://github.com/jzaefferer/validation-theme) - clone that repo, then symlink it into your `wp-content/themes` folder
-* Install [gilded-wordpress plugin](https://raw.githubusercontent.com/scottgonzalez/gilded-wordpress/v1.0.0/gilded-wordpress.php)
-* Install [jquery-static-index plugin](https://raw.githubusercontent.com/jquery/jquery-wp-content/v4.0.1/plugins/jquery-static-index.php)
+- Content is written in Markdown with Jekyll front matter
+- The site is built using Jekyll (configured in `_config.yml`)
+- GitHub Actions automatically builds and deploys the site when changes are pushed to the `main` or `master` branch
+- The workflow is defined in `.github/workflows/deploy-pages.yml`
 
-### Installation
+### Local Development
 
-In this repo:
-* Make sure nodejs (with npm) is installed, otherwise install from nodejs.org
-* `cp config-sample.json config.json`, edit config.json to match login for local WordPress
-* run `npm install -g grunt-cli`
-* run `npm install`
+To test the site locally:
 
-### Hacks
+1. Install Ruby 2.7 or higher and Bundler:
+   ```bash
+   gem install bundler
+   ```
 
-* Make sure your local `wordpress` nodejs module contains [this commit](https://github.com/scottgonzalez/node-wordpress/commit/2b19238cf8064dafb66b9db09d0adcc9eac7f724)
-* Make sure your local config contains
-  * rpc-auth and basic-auth credentials
-  * a https jqueryvalidation url
+2. Install dependencies:
+   ```bash
+   bundle install
+   npm install
+   npm run copy-libs
+   ```
 
-### Deploy
+3. Run Jekyll locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-`grunt deploy`
+4. Open your browser to `http://localhost:4000/validation-content/`
+
+**Note:** This site uses Jekyll 4.x. If you encounter issues, ensure you have Ruby 2.7 or higher installed.
+
+### Making Changes
+
+1. Edit or create Markdown files (`.md`) in the root directory
+2. Each file should have Jekyll front matter at the top:
+   ```yaml
+   ---
+   layout: default
+   title: Your Page Title
+   ---
+   ```
+3. Commit and push your changes
+4. GitHub Actions will automatically build and deploy the site
+
+### Content Structure
+
+- `index.md` - Home page
+- `documentation.md` - API documentation
+- `contribute.md` - Contribution guide
+- `reference.md` - General guidelines and reference
+- `_entries/` - Markdown documentation entries (for API methods, converted from XML)
+- `_layouts/` - Jekyll layout templates
+
+### Deployment
+
+The site is automatically deployed via GitHub Actions when:
+- Changes are pushed to `main` or `master` branch
+- The workflow can also be triggered manually from the Actions tab
+
+No manual deployment is required!

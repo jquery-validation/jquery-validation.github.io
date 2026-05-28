@@ -1,0 +1,35 @@
+title: jQuery Validation Plugin
+description: Site content for the jQuery Validation Plugin
+url: https://jquery-validation.github.io
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE-MIT.txt
+  - .gitignore
+  - .gitattributes
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+
+# Collections
+collections:
+  entries:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "entries"
+    values:
+      layout: "default"
