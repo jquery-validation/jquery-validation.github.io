@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+  pull_request:
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -50,6 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
