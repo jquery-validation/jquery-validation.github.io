@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contribute
+permalink: /contribute/
 ---
 
 There are several ways for you to contribute to this plugin:

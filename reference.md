@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Reference documentation
+permalink: /reference/
 ---
 
 # Goals
