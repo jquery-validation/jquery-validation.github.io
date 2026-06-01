@@ -1,5 +1,5 @@
 {
-  "name": "validation-content",
+  "name": "jquery-validation.github.io",
   "version": "1.0.0",
   "description": "This repository contains the documentation and content for the [jQuery Validation Plugin](https://github.com/jquery-validation/jquery-validation) website.",
   "main": "index.js",
