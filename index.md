@@ -25,8 +25,6 @@ Starting with Version 1.15.0 [Markus Staab](https://github.com/staabm) took over
 - [GitHub Repository](https://github.com/jquery-validation/jquery-validation)
 
 ### Installation via Package Managers
-- Bower: `bower install jquery-validation`
-- [NuGet](https://www.nuget.org/packages/jquery.validation): `Install-Package jQuery.Validation`
 - [NPM](https://www.npmjs.com/package/jquery-validation): `npm i jquery-validation`
 
 ### [Latest files on jsDelivr CDN](https://www.jsdelivr.com/package/npm/jquery-validation) (hotlinking welcome):
@@ -35,15 +33,9 @@ Starting with Version 1.15.0 [Markus Staab](https://github.com/staabm) took over
 - [https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.js)
 - [https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.min.js](https://cdn.jsdelivr.net/npm/jquery-validation@1.22.1/dist/additional-methods.min.js)
 
-### [Latest files on cdnjs CDN](https://cdnjs.com/libraries/jquery-validate) (hotlinking welcome):
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.min.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/jquery.validate.min.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.min.js](https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.22.1/additional-methods.min.js)
-
 ### Dependencies
 #### Required
-- [jQuery, tested with 1.7.2, 1.8.3, 1.9.1, 1.11.1, 3.1.1](https://jquery.com)
+- [jQuery](https://jquery.com)
 
 ### Support
 - Please post questions to the [official using jQuery Plugins Forum](https://forum.jquery.com/using-jquery-plugins), tagging your question with (at least) "validate". Keep your question short and succinct and provide code when possible; a testpage makes it much more likely that you get an useful answer in a shorter time.
