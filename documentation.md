@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Documentation
+permalink: /documentation/
 ---
 
 # Validate forms like you've never validated before!
