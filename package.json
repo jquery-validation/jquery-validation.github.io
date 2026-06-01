@@ -1,5 +1,5 @@
 {
-  "name": "validation-content",
+  "name": "jquery-validation.github.io",
   "version": "1.0.0",
   "description": "This repository contains the documentation and content for the [jQuery Validation Plugin](https://github.com/jquery-validation/jquery-validation) website.",
   "main": "index.js",
@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jquery-validation/validation-content.git"
+    "url": "git+https://github.com/jquery-validation/jquery-validation.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/jquery-validation/validation-content/issues"
+    "url": "https://github.com/jquery-validation/jquery-validation.github.io/issues"
   },
-  "homepage": "https://github.com/jquery-validation/validation-content#readme",
+  "homepage": "https://github.com/jquery-validation/jquery-validation.github.io#readme",
   "dependencies": {
     "jquery": "^4.0.0",
     "jquery-form": "^4.3.0",
