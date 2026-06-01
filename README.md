@@ -34,7 +34,7 @@ To test the site locally:
    bundle exec jekyll serve
    ```
 
-4. Open your browser to `http://localhost:4000/validation-content/`
+4. Open your browser to `http://localhost:4000/`
 
 **Note:** This site uses Jekyll 4.x. If you encounter issues, ensure you have Ruby 2.7 or higher installed.
 
